@@ -1,0 +1,213 @@
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-size: 50px;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    min-width: 100px;
+    width: 70%;
+    max-width: 320px;
+   
+    background-color: rgba(44, 141, 241, .5);
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+}
+
+.menu-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    background-color: rgba(44, 141, 241, .5);
+
+    /*margin: 14px;
+			border-radius: 5px;*/
+}
+
+.menu-button .bar:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.menu-button .bar:nth-of-type(3) {
+    margin-bottom: 0px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+
+    width: 50px;
+    height: 5px;
+
+    margin: 10px auto;
+    background-color: #fff;
+
+    border-radius: 10px;
+
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.menu-button:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+    -ms-transform: translateY(1.5px) rotate(-4.5deg);
+    transform: translateY(1.5px) rotate(-4.5deg);
+}
+
+.menu-button:hover .bar:nth-of-type(2) {
+    opacity: .9;
+}
+
+.menu-button:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+    -ms-transform: translateY(-1.5px) rotate(4.5deg);
+    transform: translateY(-1.5px) rotate(4.5deg);
+}
+
+.cross .bar:nth-of-type(1) {
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    -ms-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.cross .bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.cross .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    -ms-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
+}
+
+.cross:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+    -ms-transform: translateY(13.5px) rotate(-40.5deg);
+    transform: translateY(13.5px) rotate(-40.5deg);
+}
+
+.cross:hover .bar:nth-of-type(2) {
+    opacity: .1;
+}
+
+.cross:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+    -ms-transform: translateY(-13.5px) rotate(40.5deg);
+    transform: translateY(-13.5px) rotate(40.5deg);
+}
+
+
+/******/
+/*menu*/
+/******/
+
+.menu .userimg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 20px;
+    background: url(../images/kunkun.jpg) no-repeat;
+    background-size: 110px;
+    background-position: center;
+}
+.menu h2{
+    margin-top: 140px;
+}
+.menu .social{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.menu .social a{  
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+    
+
+}
+.menu .social a:nth-child(1){
+    background-color: #ccc;
+    background: url(../images/github.png) no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+.menu .social a:nth-child(2){
+    background-color: #ccc;
+    background: url(../images/qq.png) no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+.menu .social a:nth-child(3){
+    background-color: #ccc;
+    background: url(../images/weibo.png) no-repeat;
+    background-position: center;
+    background-size: 40px;
+    margin-top: 2px;
+}
+.menu .friend {
+    width: 50%;
+}
+.menu .friend img{
+    width: 100%;
+}
+
+
+
+/*********/
+/*content*/
+/*********/
+.content {
+    height: 100vh;
+    background: linear-gradient(360deg, #3299cc, #fff);
+}
